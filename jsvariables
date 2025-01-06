@@ -1,0 +1,64 @@
+1)static websites: remains same to everyone
+ex:fb login 
+2)dynamiv website: change to every one(data)
+1)you tube
+2)criczbuzz
+3)google maps #time-time#
+
+variables:
+---1)static typed and dynamic type:
+1)variables
+2)variables are used to store the data(any kind of data)
+
+variables
+1)case-sensitive
+2)start with letters,_(under score) ,$(dollersign)
+3)cant stsrt with numbers
+4)reserved words(keywords) not allowed
+5)allow letters,_(under score) ,$(dollersign),numbers
+
+how to declare variables:
+-var
+-let
+-const
+1)Var keyword 1995-2015
+2)let keyword 2015
+3)var used only 
+
+
+1)reassigning variables:
+
+let _a3="vennela";
+        console.log(_a3);
+        document.write(_a3);
+
+       var fav_std="kruuuuu";
+        fav_std="januu";
+        fav_std="bhanuuuuuuuu";
+        document.write(fav_std)
+        consloe.log(fav_std);
+o/p:bhanuuuuu
+
+
+var a=1;
+    a=5;
+    document.write(a+a)
+    console.log(a+a)
+o/p:10
+
+1)redeclaring with let is not accepted: 
+ex:
+let a=1;
+let a=5;
+document.write(a+a);
+console.log(a+a)
+
+block scope:
+variables declared with
+let a="bhanu"
+{
+    let a="tharunn"
+    console.log(a)
+    console.log(a)
+}
+console.log(a)
