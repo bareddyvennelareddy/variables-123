@@ -1,0 +1,118 @@
+JavaScript Operators:
+
+1) Arithmetic Operators
++,-,*,
+Multiplication       - *
+Division             - / (Q)
+Modules Operator     - % (R)
+Exponentian(raised the the power) - **
+++,
+--              
+
+  let a=5
+        let b=2
+        document.write(a*b ,"<br>")
+        document.write(a**b ,"<br>")
+        document.write(a/b ,"<br>")
+        document.write(a%b)
+
+Assignment:
+Var student = "swetha"
++=
+-+
+/=
+%=
+ let a=5
+        let b=2
+        a+=40 //a=a+40 a=5+40=45
+        b-=5 //b=b-5 // 2
+        
+        document.write(a,"<br>")
+        document.write(b,"<br>")
+        document.write(a*b ,"<br>")
+        document.write(a**b ,"<br>")
+        document.write(a/b ,"<br>")
+        document.write(a%b)
+         
+o/p:45
+    -3
+
+Logical operators:
+and - &&
+T and T=T
+or - ||
+T or F=F
+not
+        let a=5
+        let b=2
+        document.write(a>b && a>2 ,"<br>")
+        document.write(a>b && a>12 ,"<br>")
+        document.write(a>b || a>12 ,"<br>")
+        document.write(!(a>12) ,"<br>")
+
+Relational (Comparision) values
+<,>,>=,<=,==,===,!=,!===
+==  -equality
+
+        let a=5
+        let b="5"
+        document.write(a==b,"<br>")
+        document.write(a===b,"<br>")
+        document.write(a!=b,"<br>")
+        document.write(a!==b,"<br>")
+
+Conditional operator;Ternary operator(?)
+
+First evaluates an expression for a trur or false;
+Syntax:
+Condition ? e1:e2
+
+Window methods:
+alert() : --
+prompt() :
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // alert("manikanta")
+        //document.write(alert)
+        a=prompt("Enter Your name?")
+        alert(`My name is :${aa}`)
+
+        let t=40
+        let r=(t>40)?'Ac-off': 'Ac-on'
+        document.write(r ,"<br>")
+        let a="5"
+        let b="5"
+        document.write(a>=b,"<br>")
+        document.write(a==b,"<br>")
+        document.write(a===b,"<br>")
+        document.write(a!=b,"<br>")
+        document.write(a!==b,"<br>")
+        document.write(a>b && a>2 ,"<br>")
+        document.write(a>b && a>12 ,"<br>")
+        document.write(a>b || a>12 ,"<br>")
+        document.write(!(a>12) ,"<br>")
+        a+=40 //a=a+40 a=5+40=45
+        b-=5 //b=b-5 // 2
+        
+        document.write(a,"<br>")
+        document.write(b,"<br>")
+        document.write(a*b ,"<br>")
+        document.write(a**b ,"<br>")
+        document.write(a/b ,"<br>")
+        document.write(a%b)
+        
+
+
+
+    </script>
+</body>
+</html>
