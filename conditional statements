@@ -1,0 +1,64 @@
+
+Conditional statements:
+
+--To make the set of instructions(block of code)(conditional block)execute only when the given condition is True.
+
+--used to decide whether the code has to be executed or skip based on the given condition
+
+--line-line(sequence)
+Block of code: set of instructions
+--it will execute only when the specific condition is True
+Condition: An expression that evelutes an result(True of False)
+Ex: console.log(5>6)
+--Methods:
+if:only one possible condition:
+--if the condition is True it will execute other wise it skip
+
+Syntax:
+if(condition){
+---blick of code
+}
+
+        let a=5;
+        let b=10;
+        //5<10
+        if(a<b){
+            document.write("hi vennela","<br>")
+        }
+        document.write("welcome to India")
+
+o/p:hi vennela
+welcome to India
+
+Example:Condition is False
+
+let a=4
+let b=5
+if(a>b){
+document.write("hello bhanu","<br>")
+}
+document.write("jannnnn")
+
+o/p:jannnnn
+   welcome to india
+
+        age=prompt("enter your age?")
+        name=prompt("enter your name")
+        if(age<18){
+            alert(name+"your are too young to marry")
+        }else if(age>35){
+            alert(name+"your are too old to marry")
+        }else{
+            alert(name+"perfect age to marry")
+        }
+
+
+        let a = 5
+        let b = 10
+        if(a<b){
+            document.write("a is less than b")
+        }else{
+            document.write("a is not less than b")
+        }
+
+o/p:a is less than b
