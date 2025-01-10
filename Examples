@@ -1,0 +1,43 @@
+1)Write a program to check whether the number is divisible by 2 and 3 and both (take prompt)
+let number=parseInt(prompt("enter a number:"))
+        if (number %2==0 && number %3==0){
+            document.write("number is divisible by 2 and 3 both")
+        }else{
+            document.write("it is not divisible by 2 and 3 and both")
+        
+        }
+
+o/p:it is not divisible by 2 and 3 and both
+
+2)write a program to find the largest number out of three numbers expected from the user
+
+        let a=parseInt(prompt("enter a number?"))
+        let b=parseInt(prompt("enter a number?"))
+        let c=parseInt(prompt("enter a number?"))
+        if(a>b &&a>c){
+            document.write("a is greater b and c")
+        }else if (b>a && b>c){
+            document.write("b is greater a and c")
+        }else{
+            document.write("c is greater than a and b")
+        }
+
+o/p:c is greater than a and b
+
+
+3)Accept the following from the user and calculate the percentage of classes attended:
+a)Total no .of working days
+b)Total no .of days for absent
+After calculating percentage show that, if the percentage is less than 75, then student will not be eligible to write exam
+
+let a=parseInt(prompt("Enter the total number of working days: "))
+        let b=parseInt(prompt("Enter the number of days you were absent: "))
+        let c=a-b
+        let d=(c/a)*100
+        if(d<75){
+            document.write("You are not eligible to write the exam as your attendance percentage is "+d+"%")
+        }else{
+            document.write("You are eligible to write the exam as your attendance percentage is "+d+"%")
+        }
+
+o/p: You are not eligible to write the exam as your attendance percentage is 60%
