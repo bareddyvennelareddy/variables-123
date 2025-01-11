@@ -1,0 +1,74 @@
+Switch:
+Syntax:
+switch(variable/expression)
+case value 1:
+///block of code for case 1
+break;
+case value 2:
+///block of code for case 2
+break;
+default:
+///body of default
+
+#280
+-50*2=100
+-100*3=300
+-100*5=500
+-30*8=240
+Bill=1140
+subcharge=0.2*1140=228
+total bill=bill+subcharge=1140+228=1368
+
+let num =prompt("Enter a number?")
+        switch(true){
+            case num>0:
+                console.log("number is positive");
+                document.write("number is positive")
+                break;
+            case num==0:
+                console.log("number is zero");
+                break;
+            case num<0:
+                console.log("number is negative");
+                break;
+            default:
+                console.log("invalid Input");
+                break;
+        }
+let a = parseInt(prompt("Enter the number of units: "), 10);
+
+if (a > 0) {
+    let totalBill = 0;
+
+    if (a <= 50) {
+        totalBill = a * 2;
+    } else if (a <= 150) {
+        totalBill = (50 * 2) + ((a - 50) * 3);
+    } else if (a <= 250) {
+        totalBill = (50 * 2) + (100 * 3) + ((a - 150) * 5);
+    } else {
+        totalBill = (50 * 2) + (100 * 3) + (100 * 5) + ((a - 250) * 8);
+    }
+    totalBill += totalBill * 0.2;
+
+    document.write("Total Bill: " + totalBill);
+} else {
+    alert("Invalid input");
+        }
+        
+        //let day =prompt("enter a the day?")
+        //switch(day){
+         //   case'Monday':
+           // case'Tuesday':
+          //  case'Wednesday':
+            //case'Thursday':
+              // console.log("Its is a week Day");
+              // break;
+            //case'Friday':
+            //case'Saturday':
+            //case'Sunday':
+              //  console.log("its a weekend");
+                //break;
+            //default:
+              //  console.log("Invalid day");
+       // }
