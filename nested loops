@@ -1,0 +1,71 @@
+#1-5
+#i=1 ,2
+
+#i=1; 3
+#up =1+2=3;
+#c =1<8;3<=8;5<=8
+#block of code:1;3
+Example:
+for(let i=1;i<=8,i=i+1){
+if(i>=4){
+continue;
+}console.log(i)
+}
+
+#continue  #condition skips remain
+
+
+#i=1
+#c=1<=8
+#u=i=i+2; 1+2=3; 3+2=5;
+#b=1;3;
+ for (let i=1 ;i<=8 ;i=i+1){
+            if (i==5){
+                continue
+            }
+            console.log(i)
+        }
+o/p:135;135;
+
+#i=1;3;5
+#c=1<=8,3<=8;5<=8;7<=8
+#u=i+2;1+2=3;3+2=5;5+2=7;
+#B=1;3;5
+
+Nested loops:
+A loop inside the another lioop
+The inner loop will execute one time for each iteration of outer loop
+
+An inner loop within the repeating block of outer loop
+
+
+
+let n=5;
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=n-i;j++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let j=1;j<=2*i-1;j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        //for(let i=1;i<=5;i++){
+        //    for(let j=1;j<=i;j++){
+         //       document.write("* ")
+        //    }
+        //    document.write("<br>")
+       // }
+        //for (let i=1 ;i<=3 ;i++){
+        //    document.write(i,"<br>");
+        //    for (let j=1; j<=4 ;j++){
+        //        document.write(j," ");
+        //    }
+        //    document.write("<br>");
+       /// }
+        //for (let i=1 ;i<=8 ;i=i+1){
+        //    if (i==5){
+        //        continue
+        //    }
+        //    console.log(i)
+       // }
