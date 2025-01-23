@@ -1,0 +1,71 @@
+Function:
+a function is reusable block of code
+it can be call any where program
+---Reusable code:using  an existing code with out writing it ever we need
+you can use the same code with diff arguments to get the results
+
+Js:
+key word=function
+()
+Parameters=values which are declared
+
+ex:function with parameters:
+
+function g(name){
+            console.log("hello "+name)
+        }
+        let name=prompt("Enter your name?")
+        g(name)
+
+#add two numbers
+#two arguments
+
+function add(a,b){
+console.log(a+b)
+}
+add(3,5)
+add(7,3)
+
+function return:
+--the return statement can be used to return the value to function call
+Example:
+function a(aa,bb){
+return aa+bb;
+}
+let n1=parseFloat(prompt("enter a number1")
+let n2=parseFloat(prompt("enter a number2")
+///calling function
+let result=a(n1,n2);
+//display the result
+console.log("The sum is:"+result)
+
+Anonymous function:
+A function with out name,after we create function without name and we assign it to a variable
+
+Example:
+sum=function(n1+n2){
+let r=n1+n2
+return r
+}
+Console.log(sum(8,9))
+
+
+function g(name){
+            console.log("hello "+name)
+        }
+        let name=prompt("Enter your name?")
+        g(name)
+        //function greet(){
+         //   console.log("Hello Bhanuuuu")
+        //}
+       // greet()
+       // console.log("Hi vinayyaaa")
+       // greet()
+       // console.log("Hi rohitt")
+       // greet()
+
+sum = function(n1,n2){
+            let r= n1+n2
+            return r
+        }
+        console.log(sum(8,9));
