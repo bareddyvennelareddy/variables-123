@@ -1,0 +1,117 @@
+Callback functions:
+--you can pass the callback function as an argument to another function
+
+Execution:
+The function receiving the callback will  execute the callback at some point during execution(often at the end or after an asynchronous operation is done)
+
+Example:
+function main function(callback){
+callback()
+//here we call the callback function
+console.log("callback function executed")
+}
+mainfunction (callbackFunction);
+
+exp:
+mainfunction takes a parameter callback
+callbackFunction is passed as an argument to mainfunction
+inside the mainfunction,the callback function
+--output:
+mainfunction(callbackFunction);
+it will execute the code inside the mainfunction-
+it will print("Executing main function");
+then it reaches to callback();where it call the function which is passed to mainfunction(callback
+
+
+
+function greet(name,callback){
+console.log("hello"+name);
+callback();
+}
+function goodbye(){
+console.log("Goodbye!")
+}
+greet("Vennela",goodbye);
+});///anonymous function as callback
+
+Exp:we didn't pass a named function like (goodbye);
+Instead of that we defined an anonymous function directly with in the greet function call
+
+Ex:4 Asynchronous callback with setTimeout
+
+function fetchData(callback){
+console.log("Fetching data..."
+setTimeout(function()){
+console.log("Data fetched");
+callback();
+},2000);
+}
+
+function processData(){
+console.log("processing the fetched data..")
+}
+fetchData(processData);
+
+ex:5
+using a callback with array methods(map)
+const numbers=[1,2,3,4,5]
+const d=numbers.map(function(num){
+return num*2
+})
+Console.log(d)
+
+Ex:map() is a built in array method that callback function to an each item in array
+The call back here doubles each number (num*2)and will result the new array with doubled values each number(num*2)and will result a new array with doubled values
+
+User registration scenario based:
+Ex:
+function registruser(username,email,callback){
+console.log("user+username+"registered successfully");
+
+callback(email);//calls the callback after registration
+},2000);
+}
+
+
+function sendWelcomeEmail(email){
+console.log("sending welcome email to"+email);;
+};
+registerUser("Bhanu","bhanu123@gmail.com,sendWelcomeEmail);
+
+function registruser(username,email,callback){
+            console.log("registering user" +username);
+            setTimeout(function(){
+                console.log(email);
+                
+            },2000);
+            
+        }
+        function sendwelcomeemail(email){
+            console.log("sending welcome email to"+email);
+            
+        };
+        registruser("vennela","vennela@gmail.com",sendwelcomeemail)
+        //function fetchData(callback){
+           // document.write("Fetching data from the server... <br>");
+           // setTimeout(function(){
+           //     document.write("Data fetched successfully!<br>");
+          //      callback()
+          //  },2000);
+        //}
+        //function processData(){
+        //    document.write("Processing the fetched data... <br>");
+       // }
+        //fetchData(processData);
+
+greet=function(callback){
+            document.write("hi ")
+            setTimeout(function(){
+                document.write("iam from set timeout")
+            callback();
+        },3000);
+        }
+        function arrow(){
+            document.write("<br>")
+            document.write("iam from arrow function")
+        }
+        greet(arrow)
