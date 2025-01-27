@@ -1,0 +1,70 @@
+Promise:
+--A promise a special javascript object that represents the eventual completion (or failure) 
+asynchronous operation.
+it allows to handle asynschronus tasks more efficient than callbacks
+
+Three States:
+1)pending : The initial state ,the promise is still waiting for the operation to finish
+2)fulfilled : The operation completed successfully
+3)Rejected : The operation failed;
+
+Exp:
+1)To create a promise - new promise()
+Two parameters-
+resolve --to mark the promise as successfully
+reject -mark it as failed
+
+2)handling the result :
+.then() method is called when promise is fulfilled.
+it will recives the result from resolve()
+.catch() method is called if the promise is rejected it receives the error message from reject()
+
+Example:
+let mypromise=new promise((resolve,reject)=>{
+let success=true;
+if(success){
+resolve("The operation is successful);
+}else{
+reject("The operation failed")
+}
+});
+mypromise 
+.then(result=>{
+Console.log(result);
+});
+.catch(error=>{
+Console.log(error);
+});
+
+Changing promises:
+Ex:
+
+let promise=new Promise((resolve,r
+
+Ex:promise with setTimeOut
+--asynchronous task using aetTimeOut,and the promise will resolve after a certain amount od time
+
+
+let pro=new Promise((resolve,reject)=>{
+        resolve(5);
+    })
+    pro.then(result=>{
+        console.log(result)
+        setTimeout((pro)=>{
+            console.log("success")
+        },3000)
+    })
+        //let mypromise=new promise((resolve,resolve)=>{
+          //  let success = true;
+            //if(success){
+              //  resolve("the operation is successful")
+            //}else{
+               // reject("the operation is failed")
+           // }
+        //});
+        //mypromise.then(result=>{
+        //    console.log(result);
+        //});
+       // mypromise.catch(error=>{
+        //    console.log();
+       // })
