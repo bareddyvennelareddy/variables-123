@@ -1,0 +1,91 @@
+
+getElementBy ClassName():
+returns all the elements having the same class name
+getElementByClassName(): returns an html collection object
+An HtmlCollection is an array 
+
+ <h1> id="a" class="a">I am jann</h1>
+    <h1> id="b" class="b">I am bhanu</h1>
+    <h1> id="c" class="c">I am venni</h1>
+    <h1> class="a>I am venni</h1>
+    <script>
+        let a=document.getElementByClassName('a')
+        console.log(a)
+    </script>
+
+
+Getting elements by Tagname:
+
+Getting elements by using querySelector methods
+
+The document query selector method select an HTML elements by tagname , by id , class name
+Queryselector: can be used to select HTML element by its tagname,by id,class name;
+it selects the 
+
+QueryselectorAll:
+--it selects all the html elements by its class name and tagname
+
+Manipulating Elements:
+textContent:
+
+single element:
+To create multiple elements:
+
+<script>
+        const t=['vennela','jahnvi','vinnn']
+        for(let i=0 ; i<t.length ;i++){
+            let tt=document.createElement("h1")
+            tt.className="a"
+            tt.textContent=t[i];
+            console.log(t[i])
+            console.log(tt)
+        }
+    </script>
+
+<script>
+        const t=['vennela','jahnvi','vinnn']
+        for(let i=0 ; i<t.length ;i++){
+            let tt=document.createElement("h1")
+            tt.className="a"
+            tt.textContent=t[i];
+            console.log(t[i])
+            console.log(tt)
+        }
+    </script>
+
+ <script>
+        let t=document.createElement('h2')
+        t.className="tt"
+        t.textContent="Hello Vennn"
+        console.log(t)
+        document.body.appendChild(t)
+    </script>
+
+
+</head>
+<body>
+    <h1> id="a" class="a">I am jann</h1>
+    <h1> id="b" class="b">I am bhanu</h1>
+    <h1> id="c" class="c">I am venni</h1>
+    <h2> class="a>I am venni</h2>
+    <script>
+        let x=document.querySeloctor('h1')
+        console.log(x)
+
+    //for(let i=0; i<x.length ;i++){
+     //   console.log(x[i])
+  //  }
+    </script>
+
+meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a" class =  "a">Rahul </h1>
+    <h1 id="b" class =  "b">Revanth </h1>
+    <h1 id="c" class =  "a">Sathvik </h1>
+    <script>
+
+         let z = document.querySelectorAll("h1")
+        console.log(z);
