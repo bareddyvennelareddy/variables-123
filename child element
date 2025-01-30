@@ -1,0 +1,74 @@
+1)single element
+2)multiple element
+
+Ex:1
+To create Mulitiple elements:
+const titles=["vennela","jahnn","kruu"]
+for(let i=0; i<titles.length;i++){
+let title=document.createElement('h1');
+title.className="a"
+title.textContent=titles[i]
+console.log(title)
+}
+
+Ex:2
+let title
+for(let i=0;i<3;i++){
+title=document.creatElement('h2')
+title.className="tt"
+title.textContent=i
+console.log(title)
+
+Removing a child element from a parent node:
+<h1> Removing Child Node </h1>
+<h2> I an vennela </h2>
+<ul>
+<li> Lohithh </li>
+<li> Rohitt <li>
+<li> Mani </li>
+</ui>
+
+<script>
+const ul =document.querySelector('ul')
+const lists =document.querySelectorAll('li')
+for(const list of lists){
+console.log(`Removing: ${list.textContent}`)
+ul.removeChild(list)
+}
+</script>
+
+<div id="a">
+        <h1>Vennela</h1>
+        <h1>Jahnnn</h1>
+    </div>
+    <div id="b">
+        <h1>Lohit</h1>
+        <h1>Rohit</h1>
+    </div>
+    <script>
+        let n=document.createElement("h2")
+        n.textContent="Lohit is the team leader"
+        //get the parent element
+        let p=document.getElementById("b")
+        console.log(p.innerText)
+        p.appendChild(n)
+        console.log(p)
+        console.log(p.innerText)
+    </script>
+
+
+<h1>Removing Child Node</h1>
+    <h2>I am vennela</h2>
+    <ul>
+        <li>Lohit</li>
+        <li>Rohit</li>
+        <li>Mani</li>
+    </ul>
+    <script>
+        const ul=document.querySelector('ul')
+        const lists=document.querySelectorAll('li')
+        for(const list of lists){
+            console.log(`Removing : ${list.textContent}`)
+            ul.removeChild(list)
+        }
+    </script>
