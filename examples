@@ -1,0 +1,20 @@
+<script>
+        let n=document.createElement("h2")
+        n.textContent="rahul"
+        let p=document.getElementById("a")
+        let l=document.getElementById("b")
+        p.insertBefore(n,l)
+        console.log(p);
+    
+    let n=document.createElement('h1')
+    n.innerText="Rahul"
+    let p=document.getElementbyId('a')
+    let l=document.getElementbyId('r')
+    p.insertBefore(n,l)
+    let nn=document.createElement('h1')
+    nn.innerText="aaaa"
+    let pp=document.getElementbyId('a')
+    let ll=document.getElementbyId('rr')
+    pp.insertBefore(nn,ll)
+</body>
+</html>
