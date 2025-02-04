@@ -1,0 +1,88 @@
+React js
+--creat a element:
+--js;
+--let a=document.createElement('h1');
+a.innerHtml="i am ravi"
+document.body.
+
+
+--to create
+
+<h1>sai</h1>
+--document.createElement('h1')
+
+To create a element by React js:
+---React.createElement('h1')
+
+React.createElement(type,prop)
+-type=tag name(div,h1,p)
+props=className,id,onClick
+--to display the element
+--ReactDOM.createRoot()
+--ReactDOM.render() --to display the element
+Syntax:
+Reactelement-what to render
+Container=where to render
+
+Intro to JSX:
+(JavaScript XML)is a syntax extension for js in react js;it allows us to write html code in react
+--make sus easier to write Html in react
+JSX:JSX code gets complied into js
+Babel:a tool converts translates into js
+Keypoints:
+<br
+
+<div id="app"></div>
+<script type='text/babel">
+const element=<h1 className="a">Hello JSX!</h1>
+const root=ReactDOM.createRoot(document.getElementById('app'))
+root.render(element)
+
+without jsx:
+<div id="app"></div>
+<script>
+Const element =Reacr
+
+Expression in JSX:
+
+<div id="app"></div>
+<script type="text/babel">
+const n=10;
+const m=<h1>React is {n*2} times better than jsx</h1>
+const r=ReactDOM.createRoot(document.getElementById('a'))
+r.render(m)
+
+using function call:
+you can call the function call directly within the jsx expressions
+
+<div id="a"></div>
+<script type="text/babel">
+function getGreeting(name){
+return 'Hello,${name}!Welcome to React
+}
+//component that uses the function in jsx
+function Greeting()
+const name="sai"
+return<h1>{getGreeting(name}</h1>
+//calling a function in jsx
+}
+//create a root and render the Greeting component
+Const root =ReactDOM.createRoot(document.getElementById('a'));
+root.render(</Greeting>)
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="a.js"></script>
+</body>
+</html>
