@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb Toggle</title>
+    <link rel="stylesheet" href="m.css">
+</head>
+<body id="body">
+    <div class="container">
+        <img id="bulbImage" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png" alt="Bulb Image">
+        <br>
+        <button class="button" id="toggleButton" onclick="toggleLight()">Turn On</button>
+    </div>
+    <script>
+        let isOn = false;
+        function toggleLight(){
+            const body = document.getElementById("body");
+            const bulbImage = document.getElementById("bulbImage");
+            const toggleButton = document.getElementById("toggleButton");
+            isOn = !isOn;
+            if (isOn) {
+                body.style.backgroundColor = 'lightyellow';
+                bulbImage.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png";
+                toggleButton.textContent = "Turn Off";
+            } else {
+                body.style.backgroundColor = "black";
+                bulbImage.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png";
+                toggleButton.textContent = "Turn On";
+            }
+        }
+    </script>
+</body>
+</html>
+
+CSS:
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.container {
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5500ff;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: #ffaa00;
+}
