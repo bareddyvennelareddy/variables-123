@@ -1,0 +1,54 @@
+1)functional components:
+Syntax:
+const[ststevariable,setstatefunction]=stste(initialalue)
+1)ststevariable:holds the current state(ex:name,colr)
+2)setStatefunction:A function which is used to update the stste
+3)initial value:the initial value of the state variable when the component first renders
+
+
+React Hooks:
+--introduced on react 16.8 version
+--to manage state and life cycle features in functional components
+State:is an essential part in react because it allows component to be dynamic,ineractive and capable of responding to user input or change over time
+1)useStateHook:
+useState allows you to add state to functional components
+
+Syntax:
+const[state,setState]=useState(initialvalue)
+state:This is a current state
+setState-This is a function to update set state
+initial value:The value you want to set as the initial value
+
+import React ,{useState} from 'react'
+
+//counter component
+const Counter=()=>{
+  const[count,SetCount]=useState(0);
+  //current state = count
+  //function to update state =setCount
+  //use state() to initialize the state =0;
+
+  return(
+    <div>
+      <h1>{count}</h1>
+      <button onClick={() =>setCount(count+1)}>Increment</button>
+      <button onClick={() =>setCount(count-1)}>Decrement</button>
+    </div>
+  );
+};
+
+export default Counter;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
